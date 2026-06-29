@@ -1,0 +1,131 @@
+/* body{
+    background: #22223b;
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+#parent{
+    background-color: #4a4e69;
+    border-radius: 10px;
+    height: 80vh;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    padding: 0%;
+    margin: 0;
+    height: 20vh;
+}
+     */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#22223B;
+    padding:20px;
+}
+
+#parent{
+    width:100%;
+    max-width:450px;
+    background:#F2E9E4;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 12px 25px rgb(0, 0, 0);
+}
+
+h1{
+    text-align:center;
+    color:#22223B;
+    margin-bottom:25px;
+    font-size:2rem;
+    font-weight: bolder;
+}
+
+label{
+    display:block;
+    margin:14px 0 6px;
+    font-weight:600;
+    color:#4A4E69;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:12px;
+    border:2px solid #C9ADA7;
+    border-radius:8px;
+    background:#fff;
+    color:#22223B;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+input[type="text"]:focus{
+    border-color:#4A4E69;
+    box-shadow:0 0 8px rgba(74,78,105,.35);
+}
+
+input[type="submit"]{
+    width:100%;
+    margin-top:25px;
+    padding:13px;
+    background:#4A4E69;
+    color:#F2E9E4;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type="submit"]:hover{
+    background:#C9ADA7;
+    color:#22223B;
+    transform:translateY(-2px);
+}
+
+.result{
+    margin-top:25px;
+    padding:18px;
+    min-height:70px;
+    border:2px solid #C9ADA7;
+    border-radius:8px;
+    background:#fff;
+    color:#22223B;
+    text-align:center;
+    line-height:1.6;
+}
+
+::placeholder{
+    color:#9A8C98;
+}
+
+@media(max-width:500px){
+    #parent{
+        padding:22px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+}

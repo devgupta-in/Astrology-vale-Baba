@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <h1>Astrology vale Baba</h1>
+
+        <form id="astroForm">
+        
+            <label for="username">First name:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="surname">Surname:</label><br>
+            <input type="text" id="surname" name="surname" required><br>
+            
+            <label for="date">Date of birth(Day):</label><br>
+            <input type="text" id="date" name="date" min="1" max="31" required><br>
+  
+            <label for="month">Month:</label><br>
+            <input type="text" id="month" name="month" min="1" max="12" required><br>
+
+            <label for="year">Year:</label><br>
+            <input type="text" id="year" name="year" min="1900" max="2026" required><br>
+
+            <input type="submit" Value="Get Insights">
+            
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</html>
